@@ -5,15 +5,15 @@
 ### 为什么造轮子
 首先我们来看一下antd的选择支持多选
 
-[](https://github.com/hanzhangyu/antdCascadedSelect/tree/master/app/img/antdselect.gif)
+![antd_select](https://github.com/hanzhangyu/antdCascadedSelect/tree/master/app/img/antdselect.gif)
 
 接着我们来看下antd的级联选择不支持多选（同样支持搜索等功能）
 
-[](https://github.com/hanzhangyu/antdCascadedSelect/tree/master/app/img/antdcascader.gif)
+![antd_cascader](https://github.com/hanzhangyu/antdCascadedSelect/tree/master/app/img/antdcascader.gif)
 
 因为公司的需求需要级联多选，而antd的团队似乎觉得这种情况不多，或者是偷个小懒，不给antd的级联选择预留多选接口，比如说：我要选中国下的北京和美国以及南非，在这上个不同层级上的选项，antd只有树选择能够处理，可是树选择也太难看了，无奈之下自己操刀着手开发
 
-[](https://github.com/hanzhangyu/antdCascadedSelect/tree/master/app/img/cascadedselect.gif)
+![cascadedselect](https://github.com/hanzhangyu/antdCascadedSelect/tree/master/app/img/cascadedselect.gif)
 
 ### 使用
 
