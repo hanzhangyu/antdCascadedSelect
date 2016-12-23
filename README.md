@@ -18,7 +18,18 @@
 ### 使用
 
 > 环境：ES6，React,Antd,以及lodash算法库和classnames
+
 下载dist目录文件引入即可
+
+### 测试
+
+首先安装modules`npm install`
+
+然后直接运行`npm start`
+
+打开`localhost:8080`
+
+或者你不想在8080开启，就输入go命令中加入`--3000`，enjoy youself
 
 ### 算法
 
