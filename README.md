@@ -18,6 +18,7 @@
 ### 使用
 
 > 环境：ES6，React,Antd,以及lodash算法库和classnames
+
 下载dist目录文件引入即可
 
 ### 算法
