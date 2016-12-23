@@ -1,0 +1,15 @@
+# Sys Files #
+*.project
+.idea/
+*.log
+.npmignore
+node_modules/
+
+# Build Files #
+build/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.iml

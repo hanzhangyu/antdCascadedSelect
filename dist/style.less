@@ -1,0 +1,151 @@
+:global {
+  .cascaded_select{
+    .ant-select-selection__choice{
+      user-select:none;
+    }
+    .ant-cascader-menus{
+      display:none;
+      -webkit-animation-duration: .2s;
+      animation-duration: .2s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      user-select: none;
+      -webkit-user-select: none;
+      &.leave{
+        -webkit-animation-name: antSlideUpOut !important;
+        animation-name: antSlideUpOut !important;
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      }
+      .ant-cascader-menu{
+        height:auto;
+        max-height:250px;
+      }
+    }
+    & > .ant-select-dropdown{
+      user-select: none;
+      -webkit-user-select: none;
+      display:none;
+      top:initial;
+      left:0;
+      .selected_some{
+        background:#fff;
+        &:hover{
+          background-color: #eaf8fe;
+        }
+        &:after,&:hover:after{
+          font-family: 'anticon';
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          content: "\E600";
+          display: inline-block;
+          font-size: 12px;
+          font-size: 8px \9;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
+          -webkit-filter: none;
+          filter: none;
+          zoom: 1;
+          color: #2db7f5;
+        }
+      }
+    }
+    &.active{
+      .ant-select-selection{
+        border-color: #57c5f7;
+        outline: 0;
+        box-shadow: 0 0 0 2px rgba(45, 183, 245, 0.2);
+      }
+      .ant-cascader-menus{
+        display:block;
+        -webkit-animation-name: antSlideUpIn;
+        animation-name: antSlideUpIn;
+        .ant-cascader-menu-item{
+          position:relative;
+          &.selected{
+            background-color: #f7f7f7;
+            font-weight: bold;
+            color: #666;
+            &:after{
+              font-family: 'anticon';
+              text-rendering: optimizeLegibility;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+              content: "\E62E";
+              display: inline-block;
+              font-size: 12px;
+              font-size: 10px \9;
+              -webkit-filter: none;
+              filter: none;
+              -webkit-transform: scale(0.83333333) rotate(0deg);
+              transform: scale(0.83333333) rotate(0deg);
+              -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
+              zoom: 1;
+              -webkit-transition: all 0.2s ease;
+              transition: all 0.2s ease;
+              position: absolute;
+              right: 15px;
+              font-weight: bold;
+              text-shadow: 0 0.1px 0, 0.1px 0 0, 0 -0.1px 0, -0.1px 0;
+              color: #2db7f5;
+            }
+          }
+          &.active{
+            background-color: #DEDBDB;
+            font-weight: bold;
+            color: #666;
+          }
+          &.selected_some .item-expand:after{
+            color: #2db7f5;
+          }
+          &.selected_all .item-expand:after{
+            font-family: 'anticon';
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: "\E62E";
+            display: inline-block;
+            font-size: 14px;
+            -webkit-filter: none;
+            filter: none;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
+            zoom: 1;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            font-weight: bold;
+            text-shadow: 0 0.1px 0, 0.1px 0 0, 0 -0.1px 0, -0.1px 0;
+            color: #2db7f5 !important;
+          }
+          .item-expand{
+            position: absolute;
+            right: 15px;
+            padding: 0 5px;
+            font-style: normal;
+            &:hover{
+              &:after{
+                content: "\E62E";
+                color: #86E3F9;
+                font-weight:bold;
+              }
+            }
+            &:after{
+              font-family: 'anticon';
+              text-rendering: optimizeLegibility;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+              content: "\E600";
+              display: inline-block;
+              font-size: 12px;
+              font-size: 8px \9;
+              -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
+              -webkit-filter: none;
+              filter: none;
+              zoom: 1;
+              color: #999;
+            }
+          }
+        }
+      }
+    }
+  }
+}
