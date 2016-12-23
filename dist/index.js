@@ -392,6 +392,13 @@ var CascadedSelect = React.createClass({
             this.setState({hidePlaceHolder: false, showOptions: true, showSearch: false, searchState: []});
         }
     },
+    deleteInput(e,input){
+        let valueKey=this.state.valueKey,
+            index=valueKey.length-1;
+        if(input.value.length===0&&e.keyCode===8&&valueKey.length!=0){
+            this.selectChange(valueKey[index],true,index)
+        }
+    },
     openOptions(e){
         e.stopPropagation();
         this.setState((state) => {
@@ -520,6 +527,7 @@ var CascadedSelect = React.createClass({
                                 <div className="ant-select-search__field__wrap">
                                     <input className="ant-select-search__field" type="text" ref="input"
                                            onInput={this.changeInput.bind(this,this.refs.input,this.refs.text)}
+                                           onKeyUp={(e)=>{this.deleteInput(e,this.refs.input)}}
                                            onFocus={(e)=>{this.props.onFocus(e,this.refs.cascadedSelect)}}/>
                                     <span className="ant-select-search__field__mirror" ref="text"></span>
                                 </div>
