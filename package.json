@@ -42,7 +42,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack && webpack-dev-server",
     "webpack":"webpack",
-    "go": "webpack-dev-server"
+    "go": "webpack-dev-server --inline --port 3000"
   },
   "author": "paulhan",
   "license": "ISC"

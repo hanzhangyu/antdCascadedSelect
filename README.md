@@ -29,7 +29,7 @@
 
 打开`localhost:8080`
 
-或者你不想在8080开启，就输入go命令中加入`--3000`，enjoy youself
+或者你不想在8080开启，就输入go命令中加入` --inline --port 3000`，enjoy youself
 
 ### 算法
 
