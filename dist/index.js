@@ -29,7 +29,7 @@
 //        }]
 //    }
 //]
-import React from 'react';
+import React, { PropTypes } from 'react';
 import classnames from 'classnames';
 import { merge,map,cloneDeep } from 'lodash';
 import './style.less';
@@ -560,4 +560,16 @@ var CascadedSelect = React.createClass({
         )
     }
 });
+
+
+CascadedSelect.propTypes = {
+    style: PropTypes.object,
+    options: PropTypes.array, // 所有options格式同antd
+    placeholder: PropTypes.string, //不传不显示
+    value: PropTypes.array,//二维数组，子数组表示每个value的route
+    onFocus: PropTypes.func,
+    onBlur: PropTypes.func,
+    onChange: PropTypes.func,
+    filter: PropTypes.func
+};
 export default CascadedSelect
